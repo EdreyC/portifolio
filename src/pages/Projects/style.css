@@ -1,0 +1,35 @@
+.project-page{
+    display: flex;
+    justify-content: center;
+}
+.project-page ul{
+    padding: 4rem 0px 0px 0px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-page ul,a{
+    text-decoration: none;
+    list-style: none;
+}
+.project-page li p{
+    margin-top: 1rem; 
+    font-weight: 100;
+}
+.project-page a{
+    color: black;
+    padding: 0.2rem;
+    font-size: 20px;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    width: max-content;
+
+}
+.project-page a:hover{
+    background-color: #0d0b20;
+    color: #eeeaff;
+    text-decoration: underline;
+}
