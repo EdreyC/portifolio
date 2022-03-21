@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className="flex justify-center items-center p-20 gap-3 flex-col">
             {isFetching && <p>Carregando...</p>}
-            <img className="rounded-full" src={profile?.owner.avatar_url} alt="" />
+            <img className="rounded-full w-60" src={profile?.owner.avatar_url} alt="" />
             <h1 className="text-2xl font-black text-center text-indigo-900 mt-5">Bem vindo ao meu portifólio</h1>
 
             <span className=" text-slate-500 text-base text-center">Clique <Link className="text-indigo-900 font-bold hover:underline" to="/projects">aqui</Link> para ver os meus projetos</span>
