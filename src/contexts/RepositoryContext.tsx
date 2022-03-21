@@ -30,8 +30,6 @@ export function RepositoryContextProvider(props:RepositoryContextProps ){
         const response = await axios.get('https://api.github.com/users/EdreyC/repos')
         console.log(response.data)
         return response.data
-    }, {
-        staleTime: 1000 * 30 // 30 seconds
     })
     return(
         <RepositoryContext.Provider value={{ data, isFetching }}>
