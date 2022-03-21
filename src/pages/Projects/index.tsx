@@ -10,7 +10,7 @@ export default function Projects() {
     const { data, isFetching } = useContext(RepositoryContext)
 
     return (
-        <div className="flex items-center justify-center flex-col gap-12 md:gap-20 p-20">
+        <div className="flex items-center justify-center flex-col gap-12 md:gap-20 py-20 px-5">
 
                 <h1 className="text-4xl  font-black text-center ">Projetos</h1>
                 <ul className="  grid grid-cols-1 xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-2">
