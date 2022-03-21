@@ -20,8 +20,12 @@ export default function Projects() {
                             repo.description = "Sem descrição"
                         }
                         return (
-                            <li className="p-4"key={repo.name}>
-                                <a className="font-bold gap-3 pl-2 pr-3 py-1 flex items-center text-2xl  md:w-max hover:bg-indigo-700 rounded hover:underline hover:text-white" href={repo.html_url}><BiLinkAlt/>{reposName}</a>
+                            <li className="p-4 flex  flex-col"key={repo.name}>
+                                <div className="flex items-center ">
+                                <BiLinkAlt className="text-2xl md:text-2xl"/>
+                                <a className="font-bold gap-3 pl-2 pr-3 py-1 flex items-center text-xl  md:w-max text-2xl hover:bg-indigo-700 rounded hover:underline hover:text-white" href={repo.html_url}>{reposName}</a>
+                                </div>
+                               
                                 <p className=" p-3 text-xl">{repo.description}</p>
                             </li>
 
