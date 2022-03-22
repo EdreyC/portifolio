@@ -1,4 +1,4 @@
-import { Children, ReactChildren, useState, ReactNode } from 'react';
+import { Children, ReactChildren, useState, ReactNode, useEffect } from 'react';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import Switch  from 'react-switch';
 import { toggleMode } from '../../toggleMode';
@@ -9,12 +9,11 @@ export default function ToggleSwitch(){
     const [toggleModeSwitch, setToggleModeSwitch] = useState(
         ()=>localStorage.theme === "light"
     )
-
     const toggleModeTheme = () => {
         setToggleModeSwitch(!toggleModeSwitch)
+       
     }
 
-    toggleMode(toggleModeSwitch)
     const themes = {
         colors:{
             light:"#ffb52b",
@@ -24,6 +23,16 @@ export default function ToggleSwitch(){
             dark:"#04030f"
         }
     }
+    useEffect(()=>{
+        localStorage.theme = toggleModeSwitch?  "light": "dark"
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+        
+    },[toggleModeSwitch])
+    
     return(
   
         <div  className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-none'>
