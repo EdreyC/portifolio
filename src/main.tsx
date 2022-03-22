@@ -12,7 +12,6 @@ ReactDOM.render(
   <BrowserRouter>
     <QueryClientProvider client={queryClient}>
       <RepositoryContextProvider>
-      <ToggleSwitch/>
       <App />
     </RepositoryContextProvider>
     </QueryClientProvider>
