@@ -3,11 +3,8 @@ import { BiMoon, BiSun } from 'react-icons/bi';
 import Switch  from 'react-switch';
 import { toggleMode } from '../../toggleMode';
 
-type props ={
-    children:ReactNode
-}
 
-export default function ToggleSwitch(props:props){
+export default function ToggleSwitch(){
     
     const [toggleModeSwitch, setToggleModeSwitch] = useState(
         ()=>localStorage.theme === "light"
@@ -28,8 +25,8 @@ export default function ToggleSwitch(props:props){
         }
     }
     return(
-     <header>
-            <div  className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-none'>
+  
+        <div  className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-none'>
         <Switch 
                 checked={toggleModeSwitch}
                 checkedIcon={false}
@@ -44,10 +41,7 @@ export default function ToggleSwitch(props:props){
                 onChange={toggleModeTheme}
         />
        </div>
-       {props.children}
-
-        </header>
-
+    
         
     )
 }
