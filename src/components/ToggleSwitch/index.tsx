@@ -32,7 +32,7 @@ export default function ToggleSwitch(){
 
     }, [toggleModeSwitch])
     return(
-        <div className='flex w-full sticky top-0 bg-white justify-around items-center  px-10 py-5 border-b border-slate-300 dark:border-slate-600 dark:bg-slate-900'>
+        <div className='flex w-full sticky top-0 bg-white justify-between items-center md:justify-around px-10 py-5 border-b border-slate-300 dark:border-slate-600 dark:bg-slate-900'>
             <h1 onClick={()=>navigate("/")} className='text-xl font-bold cursor-pointer text-slate-800 
             hover:
             dark:text-slate-200'>Edrey Carneiro</h1>
