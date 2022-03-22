@@ -43,8 +43,8 @@ export default function Home() {
 
     return (
         <div>
-            {/* <div className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-none'>
-                <Switch
+            <div className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-transparent'>
+                {/* <Switch
                     checked={toggleModeSwitch}
                     checkedIcon={false}
                     uncheckedIcon={false}
@@ -56,8 +56,9 @@ export default function Home() {
                     offColor={themes.handleColor.dark}
 
                     onChange={toggleModeTheme}
-                />
-            </div> */}
+                /> */}
+                <button className="dark:text-slate-50" onClick={toggleModeTheme}>Toggle</button>
+            </div>
 
             <div className="flex justify-center items-center p-20 gap-3 flex-col ">
 
