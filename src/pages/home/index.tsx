@@ -43,7 +43,7 @@ export default function Home() {
 
     return (
         <div>
-            <div className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-none'>
+            {/* <div className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-none'>
                 <Switch
                     checked={toggleModeSwitch}
                     checkedIcon={false}
@@ -57,7 +57,7 @@ export default function Home() {
 
                     onChange={toggleModeTheme}
                 />
-            </div>
+            </div> */}
 
             <div className="flex justify-center items-center p-20 gap-3 flex-col ">
 
