@@ -64,7 +64,7 @@ export function ButtonLinkCircle(props: ButtonLinkProps) {
 
     return (
         <a href={props.link}>
-             <div className="flex items-center flex-row bg-indigo-800 text-slate-50 gap-3 p-2 rounded-full">
+             <div className="flex items-center flex-row bg-none text-indigo-800 border-slate-200 border dark:bg-indigo-800 dark:border-none dark:text-slate-50 gap-3 p-2 rounded-full">
                {props.children}
             </div>
  

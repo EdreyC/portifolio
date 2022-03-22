@@ -10,7 +10,7 @@ export default function Projects() {
     const { data, isFetching } = useContext(RepositoryContext)
 
     return (
-        <div className="flex items-center justify-center flex-col gap-12 md:gap-20 py-20 px-5">
+        <div className="flex items-center justify-center flex-col gap-12 md:gap-20 py-20 px-5 dark:text-slate-200">
 
                 <h1 className="text-4xl  font-black text-center ">Projetos</h1>
                 <ul className="  grid grid-cols-1 xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-2">
@@ -29,7 +29,7 @@ export default function Projects() {
                                     <BiLinkAlt className="text-2xl" />
                                     {reposName}
                                 </a>
-                                <p className=" p-3 text-base">{repo.description}</p>
+                                <p className=" p-3 text-slate-800 dark:text-slate-400 text-base">{repo.description}</p>
                             </li>
 
                         )
