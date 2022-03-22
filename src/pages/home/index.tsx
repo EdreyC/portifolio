@@ -44,20 +44,19 @@ export default function Home() {
     return (
         <div>
             <div className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-transparent'>
-                {/* <Switch
+                <Switch
                     checked={toggleModeSwitch}
                     checkedIcon={false}
                     uncheckedIcon={false}
-                    checkedHandleIcon={(<div className=" w-full h-full flex items-center justify-center"><BiSun color={themes.colors.light} size={20} /></div>)}
-                    uncheckedHandleIcon={(<div className=" w-full h-full flex items-center justify-center"><BiMoon color="#fff" size={20} /></div>)}
+                   
                     offHandleColor={themes.colors.dark}
 
                     onColor={themes.colors.light}
                     offColor={themes.handleColor.dark}
 
                     onChange={toggleModeTheme}
-                /> */}
-                <button className="dark:text-slate-50" onClick={toggleModeTheme}>Toggle</button>
+                />
+                <button className="dark:text-slate-50" onClick={toggleModeTheme}>Toggle {toggleModeSwitch? "dark" :"light"}</button>
             </div>
 
             <div className="flex justify-center items-center p-20 gap-3 flex-col ">
