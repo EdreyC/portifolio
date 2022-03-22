@@ -46,13 +46,13 @@ export default function Home() {
             <div className='flex w-full justify-end items-center px-10 py-5 border border-slate-300 dark:border-transparent'>
                 <Switch
                     checked={toggleModeSwitch}
-                    checkedIcon={false}
-                    uncheckedIcon={false}
+                    // checkedIcon={false}
+                    // uncheckedIcon={false}
                    
-                    offHandleColor={themes.colors.dark}
+                    // offHandleColor={themes.colors.dark}
 
-                    onColor={themes.colors.light}
-                    offColor={themes.handleColor.dark}
+                    // onColor={themes.colors.light}
+                    // offColor={themes.handleColor.dark}
 
                     onChange={toggleModeTheme}
                 />
