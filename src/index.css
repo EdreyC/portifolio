@@ -3,5 +3,21 @@
 @tailwind utilities;
 
 *{
-    font-family: "Inter",sans-serif;
+    font-family: "Rubik", "Inter",sans-serif;
+    
 }
+h1{
+    font-family: "Inter";
+}
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #4338ca;
+    border-radius: 1rem;  
+  }
