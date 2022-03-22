@@ -1,7 +1,7 @@
 import { Children, ReactChildren, useState, ReactNode } from 'react';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import Switch  from 'react-switch';
-// import { toggleMode } from '../../toggleMode';
+import { toggleMode } from '../../toggleMode';
 
 type props ={
     children:ReactNode
@@ -17,7 +17,7 @@ export default function ToggleSwitch(props:props){
         setToggleModeSwitch(!toggleModeSwitch)
     }
 
-    // toggleMode(toggleModeSwitch)
+    toggleMode(toggleModeSwitch)
     const themes = {
         colors:{
             light:"#ffb52b",
