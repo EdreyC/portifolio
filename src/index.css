@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 *{
-    font-family: "Rubik", "Inter",sans-serif;
+    font-family: "Rubik",sans-serif;
     
 }
-h1{
-    font-family: "Inter";
-}
+
 body::-webkit-scrollbar {
     width: 7px;               /* width of the entire scrollbar */
   }

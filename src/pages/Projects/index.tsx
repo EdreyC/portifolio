@@ -9,9 +9,9 @@ export default function Projects() {
     const { data, isFetching } = useContext(RepositoryContext)
 
     return (
-        <div className="flex items-center justify-center flex-col gap-12 md:gap-20 py-5 px-5 dark:text-slate-200 ">
+        <div className="flex items-center justify-center flex-col gap-3 md:gap-5 py-8 px-5 dark:text-slate-200 ">
 
-                <h1 className="text-4xl  font-extrabold text-center ">Projetos</h1>
+                <h1 className="text-4xl font-extrabold text-center ">Projetos</h1>
                 <ul className=" justify-center items-center grid grid-cols-1 xl:grid-cols-2 md:grid-cols-3 sm:grid-cols-2">
                 {isFetching && <p>Carregando...</p>}
                 {

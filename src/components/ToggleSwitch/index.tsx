@@ -1,6 +1,7 @@
 import { Children, ReactChildren, useState, ReactNode, useEffect } from 'react';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import {MdDarkMode,MdLightMode} from "react-icons/md"
+import { useNavigate } from 'react-router-dom';
 import { toggleMode } from '../../toggleMode';
 
 
@@ -13,7 +14,7 @@ export default function ToggleSwitch(){
         setToggleModeSwitch(!toggleModeSwitch)
 
     }
-
+    const navigate = useNavigate()
     const themes = {
         colors: {
             light: "#ffb52b",
@@ -31,11 +32,13 @@ export default function ToggleSwitch(){
 
     }, [toggleModeSwitch])
     return(
-        <div className='flex w-full sticky top-0 bg-white justify-end items-center  px-10 py-5 border border-slate-300 dark:border-transparent dark:bg-slate-900'>
-           
+        <div className='flex w-full sticky top-0 bg-white justify-around items-center  px-10 py-5 border-b border-slate-300 dark:border-slate-600 dark:bg-slate-900'>
+            <h1 onClick={()=>navigate("/")} className='text-xl font-bold cursor-pointer text-slate-800 
+            hover:
+            dark:text-slate-200'>Edrey Carneiro</h1>
                 <button className="flex border-2 transition-all ease-in-out delay-50  
                 text-slate-500
-                border-slate-400 rounded p-2 items-center gap-2 focus:border-blue-300 
+                border-slate-400 rounded p-2 items-center gap-2 focus:border-blue-300
                 dark:focus:border-blue-500
                 dark:text-slate-50 dark:border-slate-600 dark:bg-transparent" onClick={toggleModeTheme}>
                 {
