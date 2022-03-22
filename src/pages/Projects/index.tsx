@@ -1,5 +1,4 @@
-import { useQuery } from "react-query";
-import axios from 'axios';
+
 import { BiLinkAlt } from "react-icons/bi"
 import { useContext } from "react";
 import { RepositoryContext } from './../../contexts/RepositoryContext';
