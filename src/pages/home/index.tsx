@@ -1,12 +1,11 @@
 import { useContext, useEffect, useState } from "react"
 import { RepositoryContext } from "../../contexts/RepositoryContext"
-import { CgFolder } from "react-icons/cg"
+
 import { VscGithub } from "react-icons/vsc"
 import { RiLinkedinFill } from "react-icons/ri"
 import { Link } from "react-router-dom";
 import { ButtonLinkCircle } from '../../components/Button/index';
-import { toggleMode } from './../../toggleMode';
-import {BiSun,BiMoon} from "react-icons/bi"
+
 
 export default function Home() {
 

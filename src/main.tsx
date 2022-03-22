@@ -5,7 +5,6 @@ import { QueryClientProvider } from 'react-query';
 import { queryClient } from './services/queryClient';
 import "./index.css"
 import { RepositoryContextProvider } from './contexts/RepositoryContext';
-import ToggleSwitch from './components/ToggleSwitch/index';
 ReactDOM.render(
   
 
