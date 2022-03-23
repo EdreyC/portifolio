@@ -2,7 +2,6 @@ import { Children, ReactChildren, useState, ReactNode, useEffect } from 'react';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import {MdDarkMode,MdLightMode} from "react-icons/md"
 import { useNavigate } from 'react-router-dom';
-import { toggleMode } from '../../toggleMode';
 
 
 export default function ToggleSwitch(){
