@@ -4,7 +4,6 @@ import { VscGithub } from "react-icons/vsc"
 import { RiLinkedinFill } from "react-icons/ri"
 import { Link } from "react-router-dom";
 import { ButtonLinkCircle } from '../../components/Button/index';
-import ToggleSwitch from './../../components/ToggleSwitch/index';
 
 
 export default function Home() {
