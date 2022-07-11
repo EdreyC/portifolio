@@ -11,9 +11,9 @@ export default function Projects() {
     return (
         <div className="flex items-center justify-center flex-col gap-3 md:gap-5 py-8 px-5 dark:text-slate-200 ">
 
-                <h1 className="text-4xl font-extrabold text-center ">Projetos</h1>
-                <ul className=" justify-center items-center grid grid-cols-1 xl:grid-cols-2 md:grid-cols-3 sm:grid-cols-2">
-                {isFetching && <p>Carregando...</p>}
+                <h1 className="text-4xl font-extrabold text-center ">Projects</h1>
+                <ul className=" justify-center items-center grid grid-rows-3 grid-cols-1 xl:grid-cols-2 md:grid-cols-3 sm:grid-cols-2">
+                {isFetching && <p>Loading...</p>}
                 {
                     data?.map(repo => {
                         let reposName = repo.name[0].toUpperCase() + repo.name.slice(1)

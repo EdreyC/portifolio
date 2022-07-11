@@ -11,18 +11,15 @@ export default function Home() {
     const { data, isFetching } = useContext(RepositoryContext)
     let profile = data?.find(e => e.owner.avatar_url);
 
-   
-
-
     return (
   
           
             <div className="flex  justify-center items-center p-10 gap-3 flex-col  ">
 
-                {isFetching && <p>Carregando...</p>}
+                {isFetching && <p>Loading...</p>}
                 <img className="rounded-full w-60" src={profile?.owner.avatar_url} alt="" />
-                <h1 className="text-2xl font-extrabold text-center text-slate-800  dark:text-slate-200 mt-5">Bem vindo ao meu portifólio</h1>
-                <span className=" text-slate-500 dark:text-slate-400 text-base text-center">Clique <Link className="text-slate-800  dark:text-slate-200 font-bold hover:underline" to="/projects">aqui</Link> para ver os meus projetos</span>
+                <h1 className="text-2xl font-extrabold text-center text-slate-800  dark:text-slate-200 mt-5">Welcome to my portifolio</h1>
+                <span className=" text-slate-500 dark:text-slate-400 text-base text-center">Click <Link className="text-slate-800  dark:text-slate-200 font-bold hover:underline" to="/projects">here</Link> to see my projects</span>
 
 
 
