@@ -1,7 +1,7 @@
 # portifolio
 Meu Portifólio 👨
 
-Stacks: React and Tailwindcss
+Stacks: React, Tailwindcss, React-Query
 
 # Página home
 ![image](https://user-images.githubusercontent.com/83123090/159924301-f4d649e6-348a-490c-8524-8c89f2c86bcd.png)
